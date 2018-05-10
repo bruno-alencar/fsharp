@@ -11,11 +11,11 @@ open Leap
 let ``Year not divisible by 4: common year`` () =
     leapYear 2015 |> should equal false
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Year divisible by 4, not divisible by 100: leap year`` () =
     leapYear 1996 |> should equal true
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Year divisible by 100, not divisible by 400: common year`` () =
     leapYear 2100 |> should equal false
 
