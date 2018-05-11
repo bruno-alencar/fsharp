@@ -1,16 +1,16 @@
 ﻿module Leap
 
-let perFourHundred (year: int): bool =
-            if year % 400 = 1 
-            then false 
+let perHundred (year: int): bool = 
+            if year % 100 = 0 
+            then false
             else true
 
-let perHundred (year: int): bool = 
-            if year % 100 = 1 
-            then false
-            else perFourHundred year
+let perFourHundred (year: int): bool =
+            if year % 400 = 0 
+            then true
+            else perHundred year
 
 let leapYear (year: int): bool = 
             if year % 4 = 0 
-            then perHundred year
+            then perFourHundred year
             else false
