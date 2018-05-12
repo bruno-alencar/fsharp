@@ -11,7 +11,7 @@ open Bob
 let ``Stating something`` () =
     response "Tom-ay-to, tom-aaaah-to." |> should equal "Whatever."
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Shouting`` () =
     response "WATCH OUT!" |> should equal "Whoa, chill out!"
 
