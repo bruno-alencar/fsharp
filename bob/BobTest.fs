@@ -15,39 +15,39 @@ let ``Stating something`` () =
 let ``Shouting`` () =
     response "WATCH OUT!" |> should equal "Whoa, chill out!"
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Shouting gibberish`` () =
     response "FCECDFCAAB" |> should equal "Whoa, chill out!"
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Asking a question`` () =
     response "Does this cryogenic chamber make me look fat?" |> should equal "Sure."
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Asking a numeric question`` () =
     response "You are, what, like 15?" |> should equal "Sure."
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Asking gibberish`` () =
     response "fffbbcbeab?" |> should equal "Sure."
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Talking forcefully`` () =
     response "Let's go make out behind the gym!" |> should equal "Whatever."
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Using acronyms in regular speech`` () =
     response "It's OK if you don't want to go to the DMV." |> should equal "Whatever."
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Forceful question`` () =
     response "WHAT THE HELL WERE YOU THINKING?" |> should equal "Calm down, I know what I'm doing!"
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Shouting numbers`` () =
     response "1, 2, 3 GO!" |> should equal "Whoa, chill out!"
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Only numbers`` () =
     response "1, 2, 3" |> should equal "Whatever."
 
