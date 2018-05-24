@@ -3,9 +3,7 @@
 let sum (numbers: int list) (upperBound: int): int = 
     numbers
     |> List.filter (fun f -> upperBound % f = 0 && f <> upperBound) 
-    |> List.sum
-
-//     module SumOfMultiples
+    // |> List.sum
 
 // let divides (input: int) (modulus: int): bool = input % modulus = 0
 
