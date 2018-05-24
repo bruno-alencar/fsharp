@@ -11,7 +11,7 @@ open SumOfMultiples
 let ``Multiples of 3 or 5 up to 1`` () =
     sum [3; 5] 1 |> should equal 0
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Multiples of 3 or 5 up to 4`` () =
     sum [3; 5] 4 |> should equal 3
 
