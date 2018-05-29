@@ -19,7 +19,7 @@ let ``Multiples of 3 or 5 up to 4`` () =
 let ``Multiples of 3 up to 7`` () =
     sum [3] 7 |> should equal 9
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Multiples of 3 or 5 up to 10`` () =
     sum [3; 5] 10 |> should equal 23
 
