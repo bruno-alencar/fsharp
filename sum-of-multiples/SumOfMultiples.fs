@@ -1,13 +1,14 @@
 ﻿module SumOfMultiples
 
-let filter(numbers: int list) (value: int): int = 
-            List.filter(fun f -> item % number = 0) numbers
+let filter (numbers: int list) (value: int): int = 
+            numbers
+            |> List.filter(fun f -> f % value = 0)
             // for item in number do
             //     if item % value = 0 then item else 0
 
 let sum (numbers: int list) (upperBound: int): int = 
     [0..upperBound]
-    |> filter(numbers)
+    |> filter numbers
     // |> List.filter (fun f -> upperBound % f = 0 && f = upperBound)
     |> List.sum
 
