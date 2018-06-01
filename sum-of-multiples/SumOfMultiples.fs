@@ -1,6 +1,6 @@
 ﻿module SumOfMultiples
 
-let filter (numbers: int list) (value: int): int = 
+let change (numbers: int list) (value: int): int = 
             numbers
             |> List.filter(fun f -> f % value = 0)
             // for item in number do
@@ -8,7 +8,7 @@ let filter (numbers: int list) (value: int): int =
 
 let sum (numbers: int list) (upperBound: int): int = 
     [0..upperBound]
-    |> filter numbers
+    |> change numbers
     // |> List.filter (fun f -> upperBound % f = 0 && f = upperBound)
     |> List.sum
 
