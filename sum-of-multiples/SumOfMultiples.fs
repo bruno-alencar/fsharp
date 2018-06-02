@@ -1,6 +1,6 @@
 ﻿module SumOfMultiples
 
-let change (numbers: int list) (value: int): int = 
+let change (numbers: int list) (value: int): int list = 
             numbers
             |> List.filter(fun f -> f % value = 0)
             // for item in number do
