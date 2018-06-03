@@ -8,9 +8,10 @@ let change (numbers: int list) (value: int): int list =
 
 let sum (numbers: int list) (upperBound: int): int = 
     [0..upperBound]
-    |> change numbers
-    // |> List.filter (fun f -> upperBound % f = 0 && f = upperBound)
+    |> change (numbers)
     |> List.sum
+    // |> List.sum
+    // |> List.filter (fun f -> upperBound % f = 0 && f = upperBound)
 
 // let divides (input: int) (modulus: int): bool = input % modulus = 0
 
