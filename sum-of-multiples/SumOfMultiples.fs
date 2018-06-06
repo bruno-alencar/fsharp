@@ -1,16 +1,15 @@
 ﻿module SumOfMultiples
 
-// let change (numbers: int list) (value: int): int = 
-//             numbers
-//             |> List.filter(fun f -> f % value = 0)
-            // for item in number do
-            //     if item % value = 0 then item else 0
+    let change (value: int) (numbers: int list) : int list  = 
+             List.filter(fun f -> f % value = 0) numbers
+         
 
-let sum (numbers: int list) (upperBound: int): int = 
-    [0..upperBound]
-    // |> change (numbers)
-    |> List.sum
-    // |> List.filter (fun f -> upperBound % f = 0 && f = upperBound)
+    let sum (numbers: int list) (upperBound: int): int = 
+        [0..upperBound]
+        |> change(numbers)
+        |> List.sum
+
+    // |> list.filter (fun f -> upperBound % f = 0 && f = upperBound)
 
 // let divides (input: int) (modulus: int): bool = input % modulus = 0
 
