@@ -6,7 +6,7 @@
 
     let sum (numbers: int list) (upperBound: int): int = 
         [0..upperBound]
-        |> change(numbers)
+        |> change(upperbound, numbers)
         |> List.sum
 
     // |> list.filter (fun f -> upperBound % f = 0 && f = upperBound)
