@@ -1,36 +1,59 @@
 ﻿module SpaceAge
+open System.Linq.Expressions
+open Microsoft.VisualStudio.TestPlatform.ObjectModel
+open System.Data.SqlTypes
+open System.Security.Cryptography
 
 // TODO: define the Planet type
+
 type Planet = 
-    member this.seconds = 2
+    | Earth
+    | Mercury
+    | Venus
+    | Mars
+    | Jupiter
+    | Saturn
+    | Uranus
+    | Neptune
 
-type Earth =
-    inherit Planet 
-    member this.period = 365.25
+// type Planet = 
+//     new () = {}
+//     member this.seconds = 2
 
-type Mercury = 
-    inherit Planet 
-    member this.period = 0.2408467
+// type Earth =
+//     inherit Planet 
+//     new () = {}
+//     member this.period = 365.25
 
-type Venus = 
-    inherit Planet 
-    member this.period = 0.61519726
+// type Mercury = 
+//     inherit Planet 
+//     new () = {}
+//     member this.period = 0.2408467
+
+// type Venus = 
+//     inherit Planet 
+//     new () = {}
+//     member this.period = 0.61519726
 
 
-type Jupiter =
-    inherit Planet 
-    member this.period = 11.862615
+// type Jupiter =
+//     inherit Planet 
+//     new () = {}
+//     member this.period = 11.862615
 
-type Saturn =
-    inherit Planet 
-    member this.period = 29.447498
+// type Saturn =
+//     inherit Planet 
+//     new () = {}
+//     member this.period = 29.447498
 
-type Uranus =
-    inherit Planet 
-    member this.period = 84.016846
+// type Uranus =
+//     inherit Planet 
+//     new () = {}
+//     member this.period = 84.016846
 
-type Neptune =
-    inherit Planet 
-    member this.period = 164.79132
+// type Neptune =
+//     inherit Planet 
+//     new () = {}
+//     member this.period = 164.79132
 
 let age (planet: Planet) (seconds: int64): float = failwith "You need to implement this function."failwith "You need to implement this function."
