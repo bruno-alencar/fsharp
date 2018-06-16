@@ -6,7 +6,7 @@ open System.Security.Cryptography
 
 // TODO: define the Planet type
 
-type Planet = 
+type Planet =
     | Earth
     | Mercury
     | Venus
@@ -15,6 +15,8 @@ type Planet =
     | Saturn
     | Uranus
     | Neptune
+    member this.seconds = 31557600
+    
 
 // type Planet = 
 //     new () = {}
@@ -56,4 +58,4 @@ type Planet =
 //     new () = {}
 //     member this.period = 164.79132
 
-let age (planet: Planet) (seconds: int64): float = failwith "You need to implement this function."failwith "You need to implement this function."
+let age (planet: Planet) (seconds: int64): float = 
