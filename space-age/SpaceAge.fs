@@ -15,6 +15,7 @@ type Planet =
     | Saturn
     | Uranus
     | Neptune
-    member this.seconds = 31557600
+    member this.seconds = float 31557600.00
+
  let age (planet: Planet) (seconds: int64): float = 
-    math
+    (float)seconds / planet.seconds
