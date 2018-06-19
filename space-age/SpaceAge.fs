@@ -15,7 +15,8 @@ type Planet =
     | Saturn
     | Uranus
     | Neptune
-    member this.seconds = float 31557600.00
 
  let age (planet: Planet) (seconds: int64): float = 
-    (float)seconds / planet.seconds
+    match planet with
+        | planet as Earth ->System.Math.Round( (seconds |> float) / (31557600 |> float), 2)
+    
