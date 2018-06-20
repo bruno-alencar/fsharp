@@ -18,5 +18,6 @@ type Planet =
 
  let age (planet: Planet) (seconds: int64): float = 
     match planet with
-        | planet as Earth ->System.Math.Round( (seconds |> float) / (31557600 |> float), 2)
+        | planet as Mercury -> System.Math.Round((seconds |> float) / ((31557600 |> float) * 0.2408467), 2)
+        | planet as Earth -> System.Math.Round( (seconds |> float) / (31557600 |> float), 2)
     
