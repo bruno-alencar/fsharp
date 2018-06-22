@@ -15,7 +15,7 @@ let ``Age on Earth`` () =
 let ``Age on Mercury`` () =
     age Mercury 2134835688L |> should equal 280.88
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Age on Venus`` () =
     age Venus 189839836L |> should equal 9.78
 
