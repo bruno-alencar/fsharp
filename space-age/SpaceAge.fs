@@ -32,6 +32,11 @@ let round (value: float): float =
 
 let age (planet: Planet) (seconds: int64): float = 
     match planet with
+        | Neptune -> (seconds |> float) / (Mercury.earth * 164.79132)
+        | Uranus -> (seconds |> float) / (Mercury.earth * 84.016846)
+        | Saturn -> (seconds |> float) / (Mercury.earth * 29.447498)
+        | Jupiter -> (seconds |> float) / (Mercury.earth * 11.862615)
+        | Mars -> (seconds |> float) / (Mercury.earth * 1.8808158)
         | Venus -> (seconds |> float) / (Mercury.earth * 0.61519726)
         | Mercury -> (seconds |> float) / (Mercury.earth * 0.2408467)
         | Earth ->  (seconds |> float) / Earth.earth

@@ -19,23 +19,23 @@ let ``Age on Mercury`` () =
 let ``Age on Venus`` () =
     age Venus 189839836L |> should equal 9.78
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Age on Mars`` () =
     age Mars 2329871239L |> should equal 39.25
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Age on Jupiter`` () =
     age Jupiter 901876382L |> should equal 2.41
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Age on Saturn`` () =
     age Saturn 3000000000L |> should equal 3.23
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Age on Uranus`` () =
     age Uranus 3210123456L |> should equal 1.21
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Age on Neptune`` () =
     age Neptune 8210123456L |> should equal 1.58
 
