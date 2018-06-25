@@ -1,3 +1,8 @@
 ﻿module Raindrops
 
-let convert (number: int): string = failwith "You need to implement this function."
+let isDivisible (number: int) (value: int): bool = 
+        number % value = 0 
+
+let convert (number: int): string = 
+    [1..number]
+    |> isDivisible number
