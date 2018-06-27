@@ -12,6 +12,6 @@ let convert (number: int): string =
                     | 3 -> "Pling"
                     | 2 -> "Plang"
                     | 7 -> "Plong"
-                |> number
-            )
-    // |> List.concat(fun e -> yield e)
+                    | _ -> sprintf "%i" e
+    )
+    |> List.concat(fun e -> yield e)
