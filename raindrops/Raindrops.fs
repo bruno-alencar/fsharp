@@ -9,11 +9,11 @@ let convert (number: int): string =
         |> List.map(fun e -> 
             match e with
                 | 3 -> sprintf "Pling"
-                | 2 -> sprintf "Plang"
+                | 5 -> sprintf "Plang"
                 | 7 -> sprintf "Plong"
-                | _ -> ""
+                | _ -> null
         )
-
+    
     match factor with
-        | [] -> sprintf "%i" number
+        | [null] -> number.ToString()
         | xs -> String.concat "" xs
