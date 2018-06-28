@@ -11,11 +11,11 @@ open Raindrops
 let ``The sound for 1 is 1`` () =
     convert 1 |> should equal "1"
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``The sound for 3 is Pling`` () =
     convert 3 |> should equal "Pling"
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``The sound for 5 is Plang`` () =
     convert 5 |> should equal "Plang"
 
