@@ -12,8 +12,9 @@ let convert (number: int): string =
                 | 5 -> sprintf "Plang"
                 | 7 -> sprintf "Plong"
                 | _ -> null
-        )
+        )  
+        |> List.filter(fun g -> g <> null)
     
     match factor with
-        | [null] -> number.ToString()
+        | [] -> number.ToString()
         | xs -> String.concat "" xs
