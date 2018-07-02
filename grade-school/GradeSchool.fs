@@ -2,7 +2,7 @@
 
 type School = Map<int, string list>
 
-let empty: School = failwith "You need to implement this function."
+let empty: School = string.empty
 
 let add (student: string) (grade: int) (school: School): School = failwith "You need to implement this function."
 
