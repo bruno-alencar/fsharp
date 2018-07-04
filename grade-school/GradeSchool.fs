@@ -2,10 +2,10 @@
 
 type School = Map<int, string list>
 
-let empty: School = string.empty
+let empty: School = Map.empty
 
-let add (student: string) (grade: int) (school: School): School = 
+let add (student: string) (grade: int) (school: School): School = failwith "You need to implement this function."
 
-let roster (school: School): (int * string list) list = 
+let roster (school: School): (int * string list) list = failwith "You need to implement this function."
 
-let grade (number: int) (school: School): string list = 
+let grade (number: int) (school: School): string list = failwith "You need to implement this function."
