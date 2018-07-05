@@ -6,7 +6,7 @@ let empty: School = Map.empty
 
 let add (student: string) (grade: int) (school: School): School = 
     match school.TryFind grade with
-        | Some value -> match value.TryFind
+        | Some value ->
         | None -> school.Add(grade, [student])
 
 let roster (school: School): (int * string list) list = school |> Map.toList
