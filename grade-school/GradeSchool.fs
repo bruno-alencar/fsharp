@@ -9,7 +9,7 @@ let add (student: string) (grade: int) (school: School): School =
         | Some value -> school.Add (grade, (student :: value |> List.sort))
         | None -> school.Add (grade, [string student])
 
-let roster (school: School): (int * string list) list = school |> Map.toList
+let roster (school: School): (int * string list) list = Map.toList school
 
 let grade (number: int) (school: School): string list =  
     match school.TryFind number with
