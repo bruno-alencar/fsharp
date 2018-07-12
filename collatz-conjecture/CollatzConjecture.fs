@@ -21,14 +21,19 @@
         //     | _ when x % 2 = 1 -> calculate (3 * x + 1)
 
     let rec calculate (x: int): int option =
-        let mutable acc = 0
-        if x <= 1 then
-            Some acc
-        else if  x % 2 = 0 then
-            (incr acc) (calculate (x / 2) )
-        else 
-            calculate (3 * x + 1)
+        let counted f =
+              let count = ref 0
+              (fun calc -> 
+                if x <= 1 then
+                    Some count
+                else if  x % 2 = 0 then
+                    count := count + 1
+                    calc (x / 2)
+                else 
+                    calc (3 * x + 1))
+        Some (counted x)
 
+        
     let steps (number: int): int option = 
         // match number with
         //     | x when x < 0 -> None
