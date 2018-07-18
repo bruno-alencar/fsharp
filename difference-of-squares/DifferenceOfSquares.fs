@@ -1,11 +1,12 @@
 ﻿module DifferenceOfSquares
 
 let square x = x * x
+
 let squareOfSum (number: int): int = 
-    [|1..number|]
-    |> Array.sum
+    List.sum [1..number]
     |> square
 
-let sumOfSquares (number: int): int = 0
+let sumOfSquares (number: int): int = 
+    List.sumBy square [1..number]
 
 let differenceOfSquares (number: int): int = 0
