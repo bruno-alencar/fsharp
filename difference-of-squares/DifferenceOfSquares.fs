@@ -1,7 +1,11 @@
 ﻿module DifferenceOfSquares
 
-let squareOfSum (number: int): int = failwith "You need to implement this function."
+let square x = x * x
+let squareOfSum (number: int): int = 
+    [|1..number|]
+    |> Array.sum
+    |> square
 
-let sumOfSquares (number: int): int = failwith "You need to implement this function."
+let sumOfSquares (number: int): int = 0
 
-let differenceOfSquares (number: int): int = failwith "You need to implement this function."
+let differenceOfSquares (number: int): int = 0

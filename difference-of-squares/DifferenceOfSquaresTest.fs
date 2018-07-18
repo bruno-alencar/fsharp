@@ -11,11 +11,11 @@ open DifferenceOfSquares
 let ``Square of sum 1`` () =
     squareOfSum 1 |> should equal 1
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Square of sum 5`` () =
     squareOfSum 5 |> should equal 225
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Square of sum 100`` () =
     squareOfSum 100 |> should equal 25502500
 
