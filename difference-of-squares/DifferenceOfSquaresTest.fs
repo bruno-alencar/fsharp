@@ -31,15 +31,15 @@ let ``Sum of squares 5`` () =
 let ``Sum of squares 100`` () =
     sumOfSquares 100 |> should equal 338350
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Difference of squares 1`` () =
     differenceOfSquares 1 |> should equal 0
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Difference of squares 5`` () =
     differenceOfSquares 5 |> should equal 170
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Difference of squares 100`` () =
     differenceOfSquares 100 |> should equal 25164150
 

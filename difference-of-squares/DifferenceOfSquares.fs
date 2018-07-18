@@ -9,4 +9,5 @@ let squareOfSum (number: int): int =
 let sumOfSquares (number: int): int = 
     List.sumBy square [1..number]
 
-let differenceOfSquares (number: int): int = 0
+let differenceOfSquares (number: int): int =
+    (squareOfSum  number) - (sumOfSquares number)
