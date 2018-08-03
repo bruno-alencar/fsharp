@@ -22,8 +22,17 @@ let bottles (number: int)=
                 "Take it down and pass it around, no more bottles of beer on the wall."]
         | 2 -> [(sprintf "%i bottles of beer on the wall, %i bottles of beer." number number); 
                 (sprintf "Take one down and pass it around, %i bottle of beer on the wall." (number-1))]
-        | _ -> [ (sprintf "%i bottles of beer on the wall, %i bottles of beer."number number);
+        | _ -> [(sprintf "%i bottles of beer on the wall, %i bottles of beer."number number);
                 (sprintf "Take one down and pass it around, %i bottles of beer on the wall." (number-1))] 
 
 let recite (startBottles: int) (takeDown: int) =
-    List.collect bottles [startBottles.. -1 ..startBottles-takeDown+1]
+//     List.collect bottles [startBottles.. -1 ..startBottles-takeDown+1]
+        String.concat "" [for i in startBottles .. -1 .. startBottles-takeDown+1 -> bottles i |> Array.append ["\n"]]
+
+        // let list = []
+        // [startBottles.. -1 ..startBottles-takeDown+1]
+        // |> List.map bottles
+
+        // |> List.fold(fun f -> List.append ["\n"])
+        // |> List.concat
+
