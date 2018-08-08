@@ -52,7 +52,7 @@ let ``First two verses`` () =
           "Take one down and pass it around, 97 bottles of beer on the wall." ]
     recite 99 2 |> should equal expected
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Last three verses`` () =
     let expected = 
         [ "2 bottles of beer on the wall, 2 bottles of beer.";
@@ -65,7 +65,7 @@ let ``Last three verses`` () =
           "Go to the store and buy some more, 99 bottles of beer on the wall." ]
     recite 2 3 |> should equal expected
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``All verses`` () =
     let expected = 
         [ "99 bottles of beer on the wall, 99 bottles of beer.";
