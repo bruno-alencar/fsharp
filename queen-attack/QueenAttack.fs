@@ -5,6 +5,9 @@ let create (position: int * int) =
     | (a, b) -> (a > 0 && b > 0 ) && (a < 8 && b < 8)  
 
 let canAttack (queen1: int * int) (queen2: int * int) = 
-    // let q1 = queen1 |> create
-    // let q2 = queen2 |> create
-    // q1 && q2
+    let q1 = queen1 |> create
+    let q2 = queen2 |> create
+    if (q1 && q2) then
+        queen1 * queen2
+    else then
+        queen2 * queen1
