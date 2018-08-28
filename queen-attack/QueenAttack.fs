@@ -7,7 +7,4 @@ let create (position: int * int) =
 let canAttack (queen1: int * int) (queen2: int * int) = 
     let q1 = queen1 |> create
     let q2 = queen2 |> create
-    if (q1 && q2) then
-        queen1 * queen2
-    else then
-        queen2 * queen1
+    
