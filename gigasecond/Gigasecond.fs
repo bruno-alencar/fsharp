@@ -1,4 +1,4 @@
 ﻿module Gigasecond
 
 let add beginDate =
- System.DateTime.MinValue.AddDays beginDate
+ new System.DateTime.AddDays beginDate
