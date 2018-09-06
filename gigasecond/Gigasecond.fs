@@ -1,4 +1,5 @@
 ﻿module Gigasecond
+open System
 
 let add beginDate =
- new System.DateTime.AddDays beginDate
+  beginDate.AddSeconds 1e9
