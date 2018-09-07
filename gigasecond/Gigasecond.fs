@@ -1,5 +1,5 @@
 ﻿module Gigasecond
 open System
 
-let add beginDate =
+let add (beginDate: DateTime) =
   beginDate.AddSeconds 1e9
