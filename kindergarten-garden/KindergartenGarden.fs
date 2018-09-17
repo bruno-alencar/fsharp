@@ -1,9 +1,10 @@
 ﻿module KindergartenGarden
 
 // TODO: define the Plant type
-member Plant =
-    Radishes
-
-
+type Plant = 
+| Grass = 'G'
+| Clover = 'C'
+| Violets = 'V'
+| Radishes = 'R'
 let plants diagram student = 
     sum 
