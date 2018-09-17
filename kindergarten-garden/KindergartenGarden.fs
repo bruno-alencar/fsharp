@@ -2,9 +2,13 @@
 
 // TODO: define the Plant type
 type Plant = 
-| Grass = 'G'
-| Clover = 'C'
-| Violets = 'V'
-| Radishes = 'R'
+    | Grass = 'G'
+    | Clover = 'C'
+    | Violets = 'V'
+    | Radishes = 'R'
+
 let plants diagram student = 
-    sum 
+    match diagram with 
+    |  a as Plant  -> a
+    | _ -> ""
+
