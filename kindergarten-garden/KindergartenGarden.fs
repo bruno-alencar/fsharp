@@ -10,5 +10,5 @@ type Plant =
 let plants diagram student = 
     match diagram with 
     |  a as Plant  -> a
-    | _ -> ""
+    | _ -> "test"
 
