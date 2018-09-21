@@ -6,7 +6,6 @@ type Plant =
 | Clover = 'C'
 | Violets = 'V'
 | Radishes = 'R'
-
 let students = [
     "Alice"; "Bob"; "Charlie"; "David"; "Eve"; "Fred"; 
     "Ginny"; "Harriet"; "Ileana"; "Joseph"; "Kincaid"; "Larry"
