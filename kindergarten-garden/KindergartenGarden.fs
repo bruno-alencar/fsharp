@@ -12,8 +12,8 @@ let students = [
 ]
 
 let plants diagram student = 
-    match plants with
-    | 'C' -> Clover
-    | 'R' -> Radishes
-    | 'G' -> Grass
-    | 'V' -> Violets
+    // match plants with
+    // | 'C' -> Clover
+    // | 'R' -> Radishes
+    // | 'G' -> Grass
+    // | 'V' -> Violets
