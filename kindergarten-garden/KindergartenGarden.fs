@@ -12,15 +12,6 @@ let students = [
 ]
 
 // let plants diagram student = 
-//     // match plants with
-//     // | 'C' -> Clover
-//     // | 'R' -> Radishes
-//     // | 'G' -> Grass
-//     // | 'V' -> Violets
-//     "Alice"; "Bob"; "Charlie"; "David"; "Eve"; "Fred"; 
-//     "Ginny"; "Harriet"; "Ileana"; "Joseph"; "Kincaid"; "Larry"
-// ]
-
 let charToPlant = LanguagePrimitives.EnumOfValue
 let rowToPlants (idx:int) (row:string) = [charToPlant row.[idx]; charToPlant row.[idx + 1]]
 
