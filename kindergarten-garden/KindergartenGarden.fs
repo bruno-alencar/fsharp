@@ -10,8 +10,6 @@ let students = [
     "Alice"; "Bob"; "Charlie"; "David"; "Eve"; "Fred"; 
     "Ginny"; "Harriet"; "Ileana"; "Joseph"; "Kincaid"; "Larry"
 ]
-
-// let plants diagram student = 
 let charToPlant = LanguagePrimitives.EnumOfValue
 let rowToPlants (idx:int) (row:string) = [charToPlant row.[idx]; charToPlant row.[idx + 1]]
 
