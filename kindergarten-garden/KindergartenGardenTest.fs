@@ -14,14 +14,14 @@ let ``Partial garden - garden with single student`` () =
     let expected = [Plant.Radishes; Plant.Clover; Plant.Grass; Plant.Grass]
     plants diagram student |> should equal expected
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Partial garden - different garden with single student`` () =
     let student = "Alice"
     let diagram = "VC\nRC"
     let expected = [Plant.Violets; Plant.Clover; Plant.Radishes; Plant.Clover]
     plants diagram student |> should equal expected
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Partial garden - garden with two students`` () =
     let student = "Bob"
     let diagram = "VVCG\nVVRC"
