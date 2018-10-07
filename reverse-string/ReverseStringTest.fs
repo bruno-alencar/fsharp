@@ -11,11 +11,11 @@ open ReverseString
 let ``An empty string`` () =
     reverse "" |> should equal ""
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``A word`` () =
     reverse "robot" |> should equal "tobor"
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``A capitalized word`` () =
     reverse "Ramen" |> should equal "nemaR"
 
