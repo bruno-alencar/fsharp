@@ -11,15 +11,15 @@ open ArmstrongNumbers
 let ``Single digit numbers are Armstrong numbers`` () =
     isArmstrongNumber 5 |> should equal true
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``There are no 2 digit Armstrong numbers`` () =
     isArmstrongNumber 10 |> should equal false
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Three digit number that is an Armstrong number`` () =
     isArmstrongNumber 153 |> should equal true
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Three digit number that is not an Armstrong number`` () =
     isArmstrongNumber 100 |> should equal false
 
