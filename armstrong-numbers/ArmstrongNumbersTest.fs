@@ -23,11 +23,11 @@ let ``Three digit number that is an Armstrong number`` () =
 let ``Three digit number that is not an Armstrong number`` () =
     isArmstrongNumber 100 |> should equal false
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Four digit number that is an Armstrong number`` () =
     isArmstrongNumber 9474 |> should equal true
 
-[<Fact(Skip = "Remove to run test")>]
+[<Fact>]
 let ``Four digit number that is not an Armstrong number`` () =
     isArmstrongNumber 9475 |> should equal false
 
